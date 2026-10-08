@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Manrope:wght@200..800&display=swap');
+/* font-family: "Cormorant Garamond", serif; */
+/* font-family: "Manrope", sans-serif; */
+:root {
+  /* Brand */
+  --color-dew-yellow: #DEEF2E;
+  --color-diamond-blue: #D6E7F1;
+  /* Dark Anchors */
+  --color-ink: #181818;
+  --color-border: #18181833;
+  /* Neutral */
+  --color-paper: #FFF9E8;
+}
+
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(1.2rem,2vw,1.6rem);
+  line-height: 1.15;
+}
+
+body{
+  min-height: 100vh;
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+}
+
+h1,h2,h3,h4{
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+h1 {
+  color: var(--color-dew-yellow);
+  font-size: clamp(3.8rem, 6vw, 6.4rem);
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: clamp(2.8rem, 4vw, 4.8rem);
+}
+
+h3 {
+  font-size: clamp(2.2rem, 3vw, 3.6rem);
+}
+
+h4 {
+  font-size: clamp(1.8rem, 2.2vw, 2.8rem);
+}
+
+.container{
+  max-width: 1600px;
+  width: 95%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.btn{
+  padding: 1rem;
+  min-width: 10rem;
+  text-decoration: none;
+  border: 0.1rem solid;
+  border-radius: 3rem;
+  margin: 0.5rem 0;
+}
+
+#hero{
+  height: 100vh;
+  background-image: url('/bookstore_hero_closeup.jpg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  position: relative;
+}
+
+#hero::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(10,10,10,0.7);
+}
+
+.hero-content{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: +1;
+}
+
+.hero-tagline{
+  font-size: clamp(1.8rem, 2.2vw, 2.8rem);
+  color: var(--color-diamond-blue);
+}
+
+.btn-hero{
+  border: none;
+  color: var(--color-paper);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.8rem;
+  animation: heroBtnAnim 0.75s linear infinite alternate;
+}
+
+@keyframes heroBtnAnim {
+  from {
+    transform: translate(-50%,0%);
+  }
+  to{
+    transform: translate(-50%,-5%);
+  }
+}
+
+#about{
+  height: 100vh;
+  background-image: url('/bookstore_interior.jpg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  position: relative;
+}
+
+#about::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(10,10,10,0.4);
+}
+
+.invisible-container{
+  width: 30rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  position: absolute;
+}
+
+#invisibleContainer1 {
+  left: 10%;
+  top: 30%;
+}
+#invisibleContainer2 {
+  left: 45%;
+  top: 30%;
+}
+#invisibleContainer3 {
+  left: 86%;
+  top: 49%;
+}
+
+
+.invisible-text{
+  opacity: 0.5;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+}
+#invisibleContainer1 .invisible-text{
+  color: var(--color-diamond-blue);
+}
+#invisibleContainer2 .invisible-text{
+  color: var(--color-dew-yellow);
+}
+#invisibleContainer3 .invisible-text{
+  color: var(--color-diamond-blue);
+}

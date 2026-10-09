@@ -34,6 +34,10 @@ body{
   color: var(--color-ink);
 }
 
+header,section,footer{
+  overflow-x: hidden;
+}
+
 h1,h2,h3,h4{
   font-family: "Cormorant Garamond", serif;
   font-weight: 500;
@@ -78,7 +82,8 @@ h4 {
   height: 100vh;
   background-image: url('/bookstore_hero_closeup.jpg');
   background-repeat: no-repeat;
-  background-position: left center;
+  background-position: center;
+  background-size: 100%;
   position: relative;
 }
 
@@ -133,6 +138,7 @@ h4 {
   background-image: url('/bookstore_interior.jpg');
   background-repeat: no-repeat;
   background-position: left center;
+  background-size: 100%;
   position: relative;
 }
 
@@ -174,6 +180,7 @@ h4 {
   opacity: 0.5;
   font-size: 1.8rem;
   text-transform: capitalize;
+  transition: 0.3s all;
 }
 #invisibleContainer1 .invisible-text{
   color: var(--color-diamond-blue);
@@ -183,4 +190,24 @@ h4 {
 }
 #invisibleContainer3 .invisible-text{
   color: var(--color-diamond-blue);
+}
+.invisible-dialogue {
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    visibility 0.3s ease;
+}
+.invisible-text:hover{
+  opacity: 1;
+}
+.invisible-text:hover ~ .invisible-dialogue {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }

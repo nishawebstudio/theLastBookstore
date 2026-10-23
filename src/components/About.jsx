@@ -3,18 +3,40 @@ export default function About(){
         <section id="about">
             <div className="container">
                 <div className="about-content">
-                    <div className="invisible-container" id="invisibleContainer1">
-                        <p className="invisible-text">a children's corner</p>
-                        <p className="invisible-dialogue">A colourful little corner filled with picture books, curious stories, and plenty of room for young imaginations to wander. They can read, play, discover something new — and maybe find a book they'll want to take home.</p>
+                    <div className="about-left-container">
+                       <div className="about-img-container">
+                        <img className="about-left-image" src="/Nisha.jpg" alt="Nisha, owner, manager" />
+                       </div>
                     </div>
-                    <div className="invisible-container" id="invisibleContainer2">
-                        <p className="invisible-text">a quiet reading room</p>
-                        <p className="invisible-dialogue">Settle into a comfortable chair, find a window, and let the rest of the afternoon disappear. Our reading room is made for slow pages, quiet thoughts, and books that deserve a little extra time. </p>
-                    </div>
-                    <div className="invisible-container" id="invisibleContainer3">
-                        <p className="invisible-text">a tiny coffee counter</p>
-                        <p className="invisible-dialogue">Need something to keep you company between chapters? Grab a freshly brewed coffee, pick a book from the shelves, and settle in. We won't judge if you finish the coffee before the first chapter.</p>
-                    </div>
+                    
+                    <div className="about-right-container">
+                        <div>
+                            <h2 className="about-h2">The Story Behind The Last Bookshop</h2>
+                            <h3>We believe some places are meant to be stayed in.</h3>
+                        </div>
+                        <div>
+                            <p className="about-paras">
+                                The Last Bookshop began with a closing door.
+                            </p>
+
+                            <p className="about-paras">
+                                When the little bookshop on the corner of an old coastal street announced it was shutting down, most people saw another business making way for something newer. But its future owner, a lifelong reader named Nisha, saw something worth saving: a place where strangers became regulars, afternoons disappeared between pages, and a good recommendation could turn an ordinary day around.
+                            </p>
+                            <p className="about-paras">
+                                Nisha took over the space with a simple belief: bookstores should be places where people stay, not just places where people shop.
+                            </p>
+                            <p className="about-paras">
+                                She filled the shelves with new discoveries, second-hand treasures, childhood favourites, and stories that deserved another chance. A reading room took shape beside the windows overlooking the sea. A tiny coffee counter followed. Before long, the shop had become a gathering place for readers, curious minds, and people who simply needed somewhere to slow down.
+                            </p>
+                            <p className="about-paras">
+                                Today, The Last Bookshop remains true to that original idea. We believe a book can bring strangers together, that stories are better when shared, and that not every worthwhile afternoon needs a plan.
+                            </p>
+                            <p className="about-paras">
+                                Come looking for a particular title, or come without knowing what you need. Ask for a recommendation, browse a little longer, or settle into a quiet corner with something warm to drink.
+                            </p>
+                        </div>
+                        <h4>You don't have to know what you're looking for. Sometimes, you just have to walk in.</h4>
+                    </div>    
                 </div>
             </div>
         </section>
